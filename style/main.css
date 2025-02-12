@@ -8,7 +8,7 @@ body{
     margin-top: 20px;
 }
 
-.board-posts{
+.main__content .board-posts{
     width: 100%;
     place-items: center;
     gap: 5%;
@@ -17,7 +17,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.post{
+.board-posts .post{
     background-color: #d7d888;
     border-left: 25px solid transparent;
     width: 250px;
@@ -26,26 +26,26 @@ body{
     transform: rotate(-2deg);
     border: 0px solid #ddd;
     position: relative;
-
+    cursor: pointer;
 } 
 
-.post.pin{
+.board-posts .post .pin{
     box-shadow: 0px 70px 12px -60px rgba(94, 94, 94, 0.27)
 }
 
 .post .pin img{
     width: 12%;
     position: absolute;
-    bottom: 90%;
+    bottom: 88%;
     left: 45%;
 }
 
-.main__buttom {
+.main__content .main__buttom {
     width: 80px;
     height: 80px;
     position: fixed;
-    top: 83%;
-    left: 92%;
+    top: 82vh;
+    left: 91vw;
 
 }
 
