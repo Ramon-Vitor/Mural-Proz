@@ -1,6 +1,7 @@
 body{
-    background-image: linear-gradient(to bottom,#201629 ,rgb(16, 4, 31) );
     background-color: #201629;
+    height: 100vh;
+    background-size: cover;
 }
 
 .main__content{
@@ -40,14 +41,28 @@ body{
     left: 45%;
 }
 
+.main__content .create-paper{
+    background-color: #e99c0e;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+}
+
+
+
 .main__content .main__buttom {
     width: 80px;
     height: 80px;
     position: fixed;
     top: 82vh;
     left: 91vw;
-
+    animation-name: clicked;
+    animation-duration: 0.5;
 }
+
+
 
 .main__buttom .buttom-add-post{
     border: none;
@@ -58,4 +73,12 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 5px 6px 12px -2px, rgba(0, 0, 0, 0.3) 5px 3px 7px -3px;
     font-size: xx-large;
     cursor: pointer;
+
 }
+
+
+@keyframes clicked {
+    0%   { width: 80px; height: 80px;}
+    50%  { width: 70px; height: 70px;}
+    100% { width: 80px; height: 80px;}
+  }
