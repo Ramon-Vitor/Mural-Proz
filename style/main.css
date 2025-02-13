@@ -1,6 +1,8 @@
 body{
     background-color: #201629;
     height: 100vh;
+    overflow-x: hidden;
+
 }
 
 .main__content{
@@ -20,7 +22,6 @@ body{
 }
 
 .board-posts .post{
-    background-color: #d7d888;
     border-left: 25px solid transparent;
     width: 250px;
     height:  250px;
@@ -29,6 +30,23 @@ body{
     border: 0px solid ;
     cursor: pointer;
 } 
+
+.board-posts .p1{
+    background-color: #8afbad;
+}
+.board-posts .p2{
+    background-color: #a1d9ff;
+}
+.board-posts .p3{
+    background-color: #fab186;
+}
+.board-posts .p4{
+    background-color: #fff28d;
+}
+.board-posts .p5{
+    background-color: #ffa5c3;
+}
+
 
 .board-posts .post .pin{
     box-shadow: 0px 70px 12px -60px rgba(94, 94, 94, 0.27)
@@ -81,7 +99,7 @@ body{
 
 .big-post{
     margin-top:14vh ;
-    background-color: #d7d888;
+    background-color: #fff28d;
     width: 550px;
     height: 550px;
     display: flex;
@@ -91,7 +109,7 @@ body{
 
 .create-post{
     margin-top:14vh ;
-    background-color: #d7d888;
+    background-color: #fff28d;
     width: 550px;
     height: 550px;
     display: flex;
@@ -121,7 +139,7 @@ body{
     display: flex;
 }
 
-@keyframes openCreate{
+@keyframes openPost{
     from{
         opacity: 0;
         transform: translate3d(20px, 0, 5px);
@@ -132,7 +150,6 @@ body{
     }
 }
 
-.open .create-post{
-    animation: openCreate 0.5s;
+.open{
+    animation: openPost 0.5s;
 }
-
