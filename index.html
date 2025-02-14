@@ -17,28 +17,33 @@
     <div class="window__content hidden" id="windowContent">
 
         <div class="create-post" id="createPost">
-            <div id="inside-post-content">
-                <div class="exit" id="exit">X</div>
+            <div class="exit" id="exit">X</div>
 
-                <input type="text" id="enterprise-name" placeholder="Nome da Empresa">
-
-                <input type="text" id="job" placeholder="Cargo">
-
-                <input type="text" id="vacancy-description" placeholder="Descricao">
-
-                <input type="text" id="vacancy-address" placeholder="Endereço">
-
-                <input type="text" id="vacancy-link" placeholder="Link">
-
-                <input type="text" id="vacancy-phone-number" placeholder="Telefone">
-
-            </div>
             <div>
-                <select name="select-option" id="select-option">
+                <select name="select-option" id="select-option" class="select-option">
                     <option value="vancacies">Vagas</option>
                     <option value="mural_warnings">Avisos</option>
                     <option value="posts">Posts</option>
                 </select>
+            </div>
+
+            <div id="inside-post-content" class="post-content">
+
+
+                <input type="text" class="enterprise-name" id="enterprise-name" placeholder="Nome da Empresa">
+
+                <input type="text" class="job" id="job" placeholder="Cargo">
+
+                <input type="text" class="vacancy-description" id="vacancy-description" placeholder="Descricao">
+
+                <input type="text" class="vacancy-address" id="vacancy-address" placeholder="Endereço">
+
+                <input type="text" class="vacancy-link" id="vacancy-link" placeholder="Link">
+
+                <input type="text" class="vacancy-phone-number" id="vacancy-phone-number" placeholder="Telefone">
+
+            </div>
+            
             </div>
         </div>
     </div>

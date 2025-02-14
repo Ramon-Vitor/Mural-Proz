@@ -15,6 +15,7 @@ clickedPost.forEach(post => {
       
         focusPost.textContent = "Isso é um postite aberto";
         focusPost.classList.add ('big-post');
+        focusPost.classList.add ('animation');
         focusPost.classList.add (event.target.classList[1]);
         focusPost.id = 'bigPost'
 
@@ -28,9 +29,9 @@ clickedPost.forEach(post => {
         window.addEventListener('click', (e) =>{
             if(e.target.id == 'exit' || e.target.id == 'windowContent'){
                 const bigPost = document.getElementById('bigPost')
-                window.classList.add("hidden")
-                btn.classList.remove('hidden')
-                bigPost.remove()
+                window.classList.add("hidden");
+                btn.classList.remove('hidden');
+                bigPost.remove();
             };
         });       
     })
@@ -44,11 +45,13 @@ function openWindow (){
     createPost.classList.remove('hidden');
     window.classList.remove('hidden');
     btn.classList.add('hidden');
+    createPost.classList.add ('animation');
 
     window.addEventListener('click', (e) =>{
         if(e.target.id == 'exit' || e.target.id == 'windowContent'){
-            window.classList.add("hidden")
-            btn.classList.remove('hidden')
+            window.classList.add("hidden");
+            btn.classList.remove('hidden');
+            createPost.classList.remove ('animation');
         };
     });
 };
