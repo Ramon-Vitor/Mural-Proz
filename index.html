@@ -14,6 +14,35 @@
 
 <body>
 
+    <div class="window__content hidden" id="windowContent">
+
+        <div class="create-post" id="createPost">
+            <div id="inside-post-content">
+                <div class="exit" id="exit">X</div>
+
+                <input type="text" id="enterprise-name" placeholder="Nome da Empresa">
+
+                <input type="text" id="job" placeholder="Cargo">
+
+                <input type="text" id="vacancy-description" placeholder="Descricao">
+
+                <input type="text" id="vacancy-address" placeholder="Endereço">
+
+                <input type="text" id="vacancy-link" placeholder="Link">
+
+                <input type="text" id="vacancy-phone-number" placeholder="Telefone">
+
+            </div>
+            <div>
+                <select name="select-option" id="select-option">
+                    <option value="vancacies">Vagas</option>
+                    <option value="mural_warnings">Avisos</option>
+                    <option value="posts">Posts</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
     <header class="header__content">
         <div class="header__top">
             <div class="header__logo">
@@ -121,35 +150,20 @@
                     <img src="imgs/pin_pink.png" alt="">
 
                 </div>
-                
+
             </div>
 
-                <div onclick="openWindow()" class="main__buttom" id="mainButton">
-                    <button class="buttom-add-post">+</button>
-                </div>
+            <div onclick="openWindow()" class="main__buttom" id="mainButton">
+                <button class="buttom-add-post">+</button>
+            </div>
 
         </div>
 
-        <div class="window__content" id="windowContent">
 
-            <div class="create-post" id="createPost" >
-                <div>
-                    <div class="exit" id="exit">X</div>
-                    <H1>Isso é para criar um postite</H1>
-                    <label for=""></label>
-                    <input type="text">
 
-                    <select name="" id="">
-                        <option value="">Vagas</option>
-                        <option value="">Avisos</option>
-                        <option value="">Posts</option>
-                    </select>
-                </div>
-
-            </div>
-        </div>    
-
+        </div>
     </main>
+
 
     <footer class="footer__content">
         <div class="footer__credits">
@@ -158,9 +172,11 @@
             </div>
 
         </div>
-
+        </div>
     </footer>
 
     <script src="src/script.js"></script>
+    <script src="src/add-data.js"></script>
 </body>
+
 </html>

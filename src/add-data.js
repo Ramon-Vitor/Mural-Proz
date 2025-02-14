@@ -1,14 +1,7 @@
-const clickButtonAddPost = document.getElementById("button-add-post").addEventListener("click", function() { //Creating a function if the user is click the button
-    buttonAddPost = document.getElementById("button-add-post");
-
-    //change the css property of button
-    buttonAddPost.style.display = "none"; 
-});
-
 //Show different inputs as the user clicks on different options
 const selectOption = document.getElementById("select-option").addEventListener("change", function() {
     let option = document.getElementById("select-option").value; //get the value from the input
-    const divTest = document.getElementById("inside-div-test"); //get the local where the inputs is gonna be added
+    const divTest = document.getElementById("inside-post-content"); //get the local where the inputs is gonna be added
 
     //check each option and add their associated columns from the database
     if(option == "mural_warnings") {
@@ -26,6 +19,7 @@ const selectOption = document.getElementById("select-option").addEventListener("
 
         divTest.appendChild(title);
         divTest.appendChild(description);
+
     } else if(option == "posts") {
         divTest.innerHTML = "";
 
@@ -41,6 +35,7 @@ const selectOption = document.getElementById("select-option").addEventListener("
         
         divTest.appendChild(subject);
         divTest.appendChild(description);
+        
     } else {
         divTest.innerHTML = "";
 
