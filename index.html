@@ -6,7 +6,9 @@
     <title>Login Page</title>
 </head>
 <body>
-    <?php
+    <!--
+        PHPZADA
+        <?php
         //Im handling the possible errors that come after the user submitted the form
         try {
             if($_GET["sign"] == "empty-inputs") {
@@ -23,7 +25,8 @@
         } catch(Exception $e) {
             echo $e->getMessage();
         }
-    ?>
+        ?>
+    -->
 
     <form action="./assets/includes/login-admin.php" method="POST">
         <input type="text" name="user" placeholder="Username">
