@@ -109,10 +109,49 @@ body{
     background-color: #fff28d;
     width: 550px;
     height: 550px;
-    display: flex;
     position: fixed;
     justify-content: center;
 }
+
+.post-content{
+    display: grid;
+    grid-template-areas: "input1";
+    
+}
+
+.select-option{
+    width: 10vw;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px;
+}
+
+.enterprise-name{
+    grid-area: "input1";
+}
+.job{
+    grid-area: "input2";
+
+}
+.vacancy-description{
+    grid-area: "input3";
+
+}
+.vacancy-address{
+    grid-area: "input4";
+
+}
+.vacancy-link{
+    grid-area: "input5";
+
+}
+.vacancy-phone-number{
+    grid-area: "input6";
+
+}
+
+
+
 
 .create-post.hidden{
     display: none;
@@ -147,6 +186,6 @@ body{
     }
 }
 
-/*.open{
-    animation: openPost 0.5s;
+.animation{
+    animation: openPost 0.3s;
 }

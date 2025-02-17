@@ -1,182 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mural Proz</title>
-    <link rel="stylesheet" href="style/reset.css"> <!--limpa estilo css padrão dos navegadores -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <title>Login Page</title>
 </head>
-
 <body>
+    <!--
+        PHPZADA
+        <?php
+        //Im handling the possible errors that come after the user submitted the form
+        try {
+            if($_GET["sign"] == "empty-inputs") {
+                echo "Fill the inputs!";
+            } else if($_GET["sign"] == "empty-user") {
+                echo "empty username!";
+            } else if($_GET["sign"] == "empty-email") {
+                echo "empty email!";
+            } else if($_GET["sign"] == "empty-password") {
+                echo "empty password!";
+            } else if($_GET["sign"] == "user-not-found") {
+                echo "user not found!";
+            }
+        } catch(Exception $e) {
+            echo $e->getMessage();
+        }
+        ?>
+    -->
 
-    <div class="window__content hidden" id="windowContent">
+    <form action="./assets/includes/login-admin.php" method="POST">
+        <input type="text" name="user" placeholder="Username">
+        <input type="text" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
 
-        <div class="create-post" id="createPost">
-            <div id="inside-post-content">
-                <div class="exit" id="exit">X</div>
-
-                <input type="text" id="enterprise-name" placeholder="Nome da Empresa">
-
-                <input type="text" id="job" placeholder="Cargo">
-
-                <input type="text" id="vacancy-description" placeholder="Descricao">
-
-                <input type="text" id="vacancy-address" placeholder="Endereço">
-
-                <input type="text" id="vacancy-link" placeholder="Link">
-
-                <input type="text" id="vacancy-phone-number" placeholder="Telefone">
-
-            </div>
-            <div>
-                <select name="select-option" id="select-option">
-                    <option value="vancacies">Vagas</option>
-                    <option value="mural_warnings">Avisos</option>
-                    <option value="posts">Posts</option>
-                </select>
-            </div>
-        </div>
-    </div>
-
-    <header class="header__content">
-        <div class="header__top">
-            <div class="header__logo">
-                <div class="img-background">
-                    <img class="header__img" src="imgs/placeholderLogo.png" alt="">
-                </div>
-            </div>
-
-            <div class="header__h1">
-                <h1>Mural da Proz</h1>
-            </div>
-
-            <div class="header__user">
-                <div class="a-button login">
-                    <a class="" href=""> Login </a>
-                </div>
-
-                <div class="a-button subscribe">
-                    <a href=""> Cadrastre-se</a>
-                </div>
-            </div>
-        </div>
-
-        <nav class="header__nav">
-
-            <div class="nav__content">
-                <ul class="nav__list-sections">
-                    <li>Todos</li>
-                    <li>Vagas</li>
-                    <li>Avisos</li>
-                    <li>Posts</li>
-                </ul>
-
-            </div>
-        </nav>
-    </header>
-
-    <main class="main__content">
-        <div class="board-posts">
-
-            <div class="post p1">
-                <div class="pin">
-                    <img src="imgs/pin_yellow.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p2">
-                <div class="pin">
-                    <img src="imgs/pin_purple.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p3">
-                <div class="pin">
-                    <img src="imgs/pin_green.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p4">
-                <div class="pin">
-                    <img src="imgs/pin_red.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p5">
-                <div class="pin">
-                    <img src="imgs/pin_pink.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p3">
-                <div class="pin">
-                    <img src="imgs/pin_blue.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p2">
-                <div class="pin">
-                    <img src="imgs/pin_orange.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p1">
-                <div class="pin">
-                    <img src="imgs/pin_darkblue.png" alt="">
-
-                </div>
-            </div>
-
-            <div class="post p4">
-                <div class="pin">
-                    <img src="imgs/pin_green.png" alt="">
-
-                </div>
-            </div>
-            <div class="post p2">
-                <div class="pin">
-                    <img src="imgs/pin_pink.png" alt="">
-
-                </div>
-
-            </div>
-
-            <div onclick="openWindow()" class="main__buttom" id="mainButton">
-                <button class="buttom-add-post">+</button>
-            </div>
-
-        </div>
-
-
-
-        </div>
-    </main>
-
-
-    <footer class="footer__content">
-        <div class="footer__credits">
-            <div class="credits-github">
-                <h1>Git hub dos cria</h1>
-            </div>
-
-        </div>
-        </div>
-    </footer>
-
-    <script src="src/script.js"></script>
-    <script src="src/add-data.js"></script>
+        <button type="submit">Login</button>
+    </form>
 </body>
-
 </html>
