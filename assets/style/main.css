@@ -116,7 +116,7 @@ body{
 .post-content{
     display: grid;
     grid-template-areas: "input1";
-    
+
 }
 
 .select-option{
@@ -126,11 +126,19 @@ body{
     border-bottom: solid 1px;
 }
 
-.enterprise-name{
-    grid-area: "input1";
+.select-option:focus{
+    outline: none;
 }
-.job{
+
+.enterprise-name, .warn-title, .post-sunject{
+    grid-area: "input1";
+    text-align: center;
+    font-size: 1em;
+
+}
+.job, .warn-description, .post-description{
     grid-area: "input2";
+    text-wrap: wrap;
 
 }
 .vacancy-description{
@@ -150,7 +158,32 @@ body{
 
 }
 
+.create-post input{
+background-color: transparent;
+border: transparent;
+border-bottom: 1px solid;
+border-color: #000;
+font-size: 0.7em;
+}
 
+.create-post input:focus{
+    outline: none;
+}
+
+.create-post textarea{
+    background-color: transparent;
+    border: transparent;
+    text-align: left;
+    font-size: 0.7em;
+    resize: none;
+    line-height: 24px;
+    background-image: linear-gradient(transparent 23px, #000 24px);
+    background-size: 100% 24px; /* Altura da linha */
+}
+
+textarea:focus{
+    outline: none;
+}
 
 
 .create-post.hidden{
