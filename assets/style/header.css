@@ -6,6 +6,7 @@ body{
     background-color: #392269;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 
@@ -51,6 +52,7 @@ body{
     flex-direction: row;
     width: 20vw;
     text-wrap: nowrap;
+    align-items: baseline;
 }
 
 .header__user .a-button{

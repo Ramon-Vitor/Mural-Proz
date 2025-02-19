@@ -1,0 +1,152 @@
+@media (max-width:600px) {
+    
+    .header__h1{
+        display: none !important;
+    }
+
+    .nav__list-sections .filter{
+        font-size: large !important;
+    }
+
+    
+    .header__user{
+        margin-right: 25vw !important;
+        width: 60vw !important;
+    }
+
+    .header__user .subscribe{
+        width: 30VW !important;
+    }
+    
+
+    .board-posts .post{
+        width: 80px;
+        height:  80px;
+    }
+}
+
+@media (max-width:767px) {
+    .header__top{
+        gap: 0%;
+    }
+
+    .img-background, .header__img{
+        height: 6vh;
+        width: 6vh;
+    }
+
+
+    /*main*/
+    .main__content .board-posts{
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .board-posts .post{
+        width: 200px;
+        height:  200px;
+    }
+
+    .main__content .main__buttom{
+        width: 100px;
+        height: 100px;
+        left: 75vw !important;
+        top: 85vh;
+    }
+
+    .main__content .main__buttom-github{
+        width: 100px;
+        height: 100px;
+        left: 2.5vw;
+        top: 85vh;
+    }
+
+    /*Big-post*/
+    .big-post,.create-post{
+        width: 80%;
+    }
+
+    .select-option{
+        width: 20vw;
+    }
+
+    .buttons-create-post{
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width: 992px){
+    .header__top{
+        gap: 0%;
+        justify-content: space-between;
+    }
+
+    .header__logo{
+        margin-left: 1vw;
+    }
+
+    .img-background, .header__img{
+        height: 8vh;
+        width: 8vh;
+    }
+    .nav__list-sections .filter{
+        font-size: larger;
+    }
+
+    .header__user{
+        margin-right: 5vw !important;
+    }
+
+    /*main*/
+
+    .board-posts .post{
+        width: 200px;
+        height:  200px;
+    }
+
+    .main__content .main__buttom{
+        width: 100px;
+        height: 100px;
+        left: 83vw;
+        top: 85vh;
+    }
+
+    .main__content .main__buttom-github{
+        width: 100px;
+        height: 100px;
+        left: 2.5vw;
+        top: 85vh;
+    }
+}
+
+@media screen and (max-width: 1200px ){
+    .header__top{
+        gap: 0%;
+        justify-content: space-between;
+    }
+
+    .header__user{
+        margin-right: 5vw;
+    }
+
+
+    .main__content .board-posts{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3%;
+    }
+
+    .main__content .main__buttom{
+        width: 100px;
+        height: 100px;
+        left: 83vw;
+        top: 85vh;
+    }
+
+    .main__content .main__buttom-github{
+        width: 100px;
+        height: 100px;
+        left: 2.5vw;
+        top: 85vh;
+    }
+}

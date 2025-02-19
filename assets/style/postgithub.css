@@ -25,6 +25,7 @@
     align-items: center;
     margin-bottom: 1vh;
     margin-top: 2vh;
+    pointer-events: none;
 }
 
 .git-post .devscredits{
@@ -48,4 +49,5 @@
 .git-post .devscredits .pics-devs{
     height: 8vh;
     border-radius: 50%;
+    pointer-events: none;
 }
